@@ -22,12 +22,22 @@
             margin-left: 542px;
         }
     </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
    
-            <table class="auto-style1">
+         
+        
+<div data-role="page">
+  <div data-role="header">
+    <h1>Welcome To Booking</h1>
+  </div>
+       <table class="auto-style1">
                 <tr>
                     <td class="auto-style2">
                       <b>  <asp:Label ID="Label1" runat="server" Text="Movie you have selected : "></asp:Label></b>
@@ -82,10 +92,19 @@
 
                     </td>
                     <td class="auto-style4">
-                     <asp:Button ID="Book" runat="server" Text="Book" CssClass="auto-style5" />
-                    </td>
+                            <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Book</a>
+
+    <div data-role="popup" id="myPopup" class="ui-content">
+      <h3>Booked!</h3>
+          </div>
+           </td>
                     <td class="auto-style3">
-                         <asp:Button ID="Notify" runat="server" Text="Notify" />
+                            <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Notify</a>
+
+    <div data-role="popup" id="myPopup" class="ui-content">
+      <h3>Notify!</h3>
+          </div>
+
                     </td>
                     <td>
                         
@@ -93,8 +112,10 @@
                 </tr>        </table>
       
            
-   
-            </div>
+     </div>
+
+  </div>
+
     </form>
 </body>
 </html>
