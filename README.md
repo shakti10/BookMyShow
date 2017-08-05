@@ -1,2 +1,0 @@
-# BookMyShow
-BookMyShow
